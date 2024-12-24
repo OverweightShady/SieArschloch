@@ -5,23 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Gift for My Friend</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Container layout */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Space between main content and button */
+            align-items: center; /* Vertically center both sections */
+            height: 80vh; /* Take up most of the viewport height */
+            padding: 0 50px; /* Add padding for spacing around the edges */
+        }
+
+        /* Main content styling */
+        .content {
+            flex: 1; /* Take up equal width */
+            max-width: 600px;
+            text-align: center; /* Center text inside the content */
+            margin: auto; /* Center the content properly */
+        }
+
+        /* Button container styling */
+        .button-container {
+            flex: 0.3; /* Button container takes 30% of the width */
+            display: flex;
+            justify-content: center; /* Center the button horizontally */
+            align-items: center; /* Center the button vertically */
+        }
+
+        /* Button styling */
+        .click-me-button {
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            color: white;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .click-me-button:hover {
+            background-color: #e05547;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Merry Christmas, Maxi!</h1>
     </header>
     <main>
-        <section class="message">
-            <h2>🎄 WTF is this? 🎄</h2>
-            <p>We've always wanted to build something together. Well, this should be the first of hopefully many such somethings.</p>
-        </section>
-        <section class="message">
-        <h2>✨ <a href="https://github.com/OverweightShady/SieArschloch" target="_blank">Here is the GitHub</a> ✨</h2>
-        </section>
-        <section class="message">
-            <h2></h2>
-            <p>PS : At the moment the repo needs to be public for this to work, so don't start adding personal data or photos. We will have to sit and workshop this to move the domain to a proper place eventually. Attention to detail has never been my thing :D</p>
-        </section>
+        <div class="container">
+            <!-- Main content -->
+            <div class="content">
+                <section class="message">
+                    <h2>🎄 WTF is this? 🎄</h2>
+                    <p>We've always wanted to build something together. Well, this should be the first of hopefully many such somethings.</p>
+                </section>
+                <section class="message">
+                    <h2>✨ <a href="https://github.com/OverweightShady/SieArschloch" target="_blank">Here is the GitHub</a> ✨</h2>
+                </section>
+                <section class="message">
+                    <h2></h2>
+                    <p>PS : At the moment the repo needs to be public for this to work, so don't start adding personal data or photos. We will have to sit and workshop this to move the domain to a proper place eventually. Attention to detail has never been my thing :D</p>
+                </section>
+            </div>
+
+            <!-- Button container -->
+            <div class="button-container">
+                <a href="netthier.html" class="click-me-button">BONUS</a>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Made with ❤️ by Lalit</p>
